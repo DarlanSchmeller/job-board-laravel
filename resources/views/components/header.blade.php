@@ -4,7 +4,8 @@
 
             <a href="{{ route('jobs.index') }}" class="flex items-center gap-2 group">
                 <div
-                    class="w-10 h-10 rounded-xl bg-blue-600 flex items-center justify-center group-hover:bg-blue-700 transition-colors">
+                    class="w-10 h-10 rounded-xl bg-blue-600 flex items-center justify-center group-hover:bg-blue-700
+                    transition-colors">
                     <x-heroicon-o-briefcase class="w-5 h-5 text-white" />
                 </div>
 
@@ -19,10 +20,9 @@
                     Browse Jobs
                 </a>
 
-                <a href="{{ route('jobs.create') }}"
-                    class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 rounded-xl font-medium transition-colors duration-200">
+                <x-button padding="px-6 py-2.5" rounded="rounded-xl">
                     Post a Job
-                </a>
+                </x-button>
             </nav>
 
         </div>
